@@ -1,0 +1,46 @@
+.auth-nav {
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @include desktop {
+    flex-direction: row;
+    gap: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.auth-nav-link {
+  display: flex;
+  align-items: center;
+
+  color: $textColor;
+  @include font(500, 14px, 1.14, 0.02em);
+
+  transition: color $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+.mail-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.smartphone-icon {
+  fill: currentColor;
+  margin-right: 10px;
+
+  .smartphone-item:hover &,
+  .smartphone-item:focus & {
+    fill: $accent;
+  }
+}

@@ -1,0 +1,38 @@
+.workers {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.workers__item {
+  background-color: $whiteColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
+}
+.workers__photo {
+  margin-bottom: 30px;
+}
+.workers__title {
+  @include font(500, 16px, 1.19, null);
+  margin-bottom: 10px;
+}
+.workers__text {
+  margin-bottom: 16px;
+  color: $textColor;
+  @include font(null, 16px, 1.19, null);
+}

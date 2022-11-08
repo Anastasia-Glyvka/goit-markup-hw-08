@@ -1,0 +1,37 @@
+.footer-container {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.footer-link {
+  transition: color $timingFunction;
+
+  color: $whiteTransparent;
+  font-size: 14px;
+  font-style: normal;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.footer-adress {
+  transition: color $timingFunction;
+
+  color: $whiteColor;
+  font-size: 14px;
+  text-decoration: none;
+  font-style: normal;
+
+  &:hover,
+  ˆ:focus {
+    color: $accent;
+  }
+}

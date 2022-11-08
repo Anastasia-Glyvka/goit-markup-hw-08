@@ -1,0 +1,20 @@
+.footer-wrapper {
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer {
+  background-color: $backgroundDark;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.tablet-footer-wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}

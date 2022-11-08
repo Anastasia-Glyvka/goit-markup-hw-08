@@ -1,0 +1,22 @@
+.logo {
+  margin-right: 88px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: $accent;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  @include font(700, 24px, 1.16, null);
+
+  & > span {
+    color: $logoColor;
+  }
+  @include tablet {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  @include desktop {
+    @include font(700, 26px, 1.19, null);
+    margin-right: 93px;
+  }
+}
