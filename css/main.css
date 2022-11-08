@@ -737,6 +737,12 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tablet-footer-wrapper {
+    margin-bottom: 0px;
   }
 }
 

@@ -15,5 +15,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    margin-bottom: 0px;
   }
 }
