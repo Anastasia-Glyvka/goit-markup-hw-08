@@ -5,8 +5,8 @@
   margin-bottom: 60px;
 
   @include desktop {
+    display: block;
     margin-left: 70px;
-    width: 206px;
   }
 }
 .action-title {
