@@ -3,25 +3,25 @@
   margin: 0 auto;
 
   background-color: #c4c4c4;
-  background-image: $bg-gradient, url(/..images/bcg-img-mob.jpg);
+  background-image: $bg-gradient, url(../images/bcg-img-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 118px;
   padding-bottom: 118px;
   @include retina {
-    background-image: $bg-gradient, url(/..images/bcg-img-mob-2x.jpg);
+    background-image: $bg-gradient, url(../images/bcg-img-mob-2x.jpg);
   }
   @media screen and (min-width: 481px) {
-    background-image: $bg-gradient, url(/..images/bcg-img-tab.jpg);
+    background-image: $bg-gradient, url(../images/bcg-img-tab.jpg);
     @include retina {
-      background-image: $bg-gradient, url(/..images/bcg-img-tab-2x.jpg);
+      background-image: $bg-gradient, url(../images/bcg-img-tab-2x.jpg);
     }
   }
   @media screen and (min-width: 769px) {
-    background-image: $bg-gradient, url(/..images/bcg-img.jpg);
+    background-image: $bg-gradient, url(../images/bcg-img.jpg);
     @include retina {
-      background-image: $bg-gradient, url(/..images/bcg-img-2x.jpg);
+      background-image: $bg-gradient, url(../images/bcg-img-2x.jpg);
     }
   }
   @include desktop {
